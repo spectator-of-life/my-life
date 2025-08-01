@@ -532,7 +532,7 @@ async function renderBlogGrid() {
 	if (!blogGrid) return;
 
 	try {
-		const res = await fetch('../data/posts.json');
+		const res = await fetch('https://raw.githubusercontent.com/spectator-of-life/my-life/main/assets/data/posts.json');
 		const blogPosts = await res.json();
 
 		// Sort by newest first
