@@ -1,42 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Static Blog</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <!-- <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
-  > -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Stories - Personal Blog</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>My Static Blog</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-    </nav>
-  </header>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Life Stories</h1>
+            <p class="tagline">Sharing moments, thoughts & experiences</p>
+        </div>
+    </header>
 
-  <main>
-    <section class="post-list">
-      <article>
-        <h2><a href="posts/post1.html">Post Title 1</a></h2>
-        <p class="meta">July 30, 2025 • anon</p>
-        <p>A short description or preview of the blog post...</p>
-      </article>
+    <main class="main">
+        <div class="container">
+            <div class="hero-section">
+                <h2 class="hero-title">Welcome to my world</h2>
+                <p class="hero-description">A collection of personal thoughts, lifestyle tips, and life experiences worth sharing.</p>
+            </div>
 
-      <article>
-        <h2><a href="posts/post2.html">Post Title 2</a></h2>
-        <p class="meta">July 29, 2025 • Author Name</p>
-        <p>A short description or preview of the second post...</p>
-      </article>
-    </section>
-  </main>
+            <div class="blog-grid" id="blogGrid">
+                <!-- Blog posts will be dynamically inserted here -->
+            </div>
+        </div>
+    </main>
 
-  <footer>
-    <p>© 2025 My Static Blog</p>
-  </footer>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Life Stories. Made with ❤️</p>
+        </div>
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
