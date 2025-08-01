@@ -1,0 +1,16 @@
+[
+	{
+		"id": 1,
+		"title": "Building a Reading Habit That Actually Stuck",
+		"excerpt": "After years of buying books I never read, I finally cracked the code to consistent reading...",
+		"content": "1.md",
+		"date": "2023-12-20"
+	},
+	{
+		"id": 2,
+		"title": "The Morning Routine That Changed My Life",
+		"excerpt": "After years of chaotic mornings, I discovered a simple routine that transformed my entire outlook.",
+		"content": "2.md",
+		"date": "2024-01-05"
+	}
+]

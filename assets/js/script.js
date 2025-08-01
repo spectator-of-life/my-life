@@ -497,35 +497,65 @@ function getUrlParameter(name) {
 }
 
 // Function to render blog grid on main page
-function renderBlogGrid() {
+// function renderBlogGrid() {
+// 	const blogGrid = document.getElementById("blogGrid");
+// 	if (!blogGrid) return;
+
+// 	// Sort blogs by date (newest first)
+// 	const sortedBlogs = blogPosts.sort(
+// 		(a, b) => new Date(b.date) - new Date(a.date)
+// 	);
+
+// 	blogGrid.innerHTML = sortedBlogs
+// 		.map(
+// 			(blog) => `
+//         <div class="blog-card" onclick="navigateToBlog(${blog.id})">
+//             ${
+// 				blog.image
+// 					? `<img src="${blog.image}" alt="${blog.title}" class="blog-image" onerror="this.style.display='none';">`
+// 					: '<div class="blog-image"></div>'
+// 			}
+//             <div class="blog-content">
+//                 <div class="blog-date">${formatDate(blog.date)}</div>
+//                 <h3 class="blog-title">${blog.title}</h3>
+//                 <p class="blog-excerpt">${blog.excerpt}</p>
+//                 <span class="read-more">Read More</span>
+//             </div>
+//         </div>
+//     `
+// 		)
+// 		.join("");
+// }
+
+async function renderBlogGrid() {
 	const blogGrid = document.getElementById("blogGrid");
 	if (!blogGrid) return;
 
-	// Sort blogs by date (newest first)
-	const sortedBlogs = blogPosts.sort(
-		(a, b) => new Date(b.date) - new Date(a.date)
-	);
+	try {
+		const res = await fetch('../data/posts.json');
+		const blogPosts = await res.json();
 
-	blogGrid.innerHTML = sortedBlogs
-		.map(
-			(blog) => `
-        <div class="blog-card" onclick="navigateToBlog(${blog.id})">
-            ${
-				blog.image
-					? `<img src="${blog.image}" alt="${blog.title}" class="blog-image" onerror="this.style.display='none';">`
-					: '<div class="blog-image"></div>'
-			}
-            <div class="blog-content">
-                <div class="blog-date">${formatDate(blog.date)}</div>
-                <h3 class="blog-title">${blog.title}</h3>
-                <p class="blog-excerpt">${blog.excerpt}</p>
-                <span class="read-more">Read More</span>
-            </div>
-        </div>
-    `
-		)
-		.join("");
+		// Sort by newest first
+		const sortedBlogs = blogPosts.sort(
+			(a, b) => new Date(b.date) - new Date(a.date)
+		);
+
+		blogGrid.innerHTML = sortedBlogs.map(blog => `
+			<div class="blog-card" onclick="navigateToBlog(${blog.id})">
+				<div class="blog-content">
+					<div class="blog-date">${formatDate(blog.date)}</div>
+					<h3 class="blog-title">${blog.title}</h3>
+					<p class="blog-excerpt">${blog.excerpt}</p>
+					<span class="read-more">Read More</span>
+				</div>
+			</div>
+		`).join('');
+	} catch (err) {
+		console.error("Failed to load blog posts:", err);
+		blogGrid.innerHTML = "<p>Failed to load blog posts.</p>";
+	}
 }
+
 
 // Function to render individual blog post
 // function renderBlogPost() {
@@ -570,16 +600,15 @@ async function renderBlogPost() {
 		// Optional: extract title, date, image from the markdown
 		const titleMatch = markdown.match(/^# (.+)$/m);
 		const dateMatch = markdown.match(/\*\*Date:\*\* (.+)/);
-		const imageMatch = markdown.match(/\*\*Image:\*\* (.+)/);
+		// const imageMatch = markdown.match(/\*\*Image:\*\* (.+)/);
 
 		const title = titleMatch ? titleMatch[1] : "Untitled Post";
 		const date = dateMatch ? dateMatch[1] : "Unknown Date";
-		const image = imageMatch ? imageMatch[1].trim() : "";
+		// const image = imageMatch ? imageMatch[1].trim() : "";
 
 		document.getElementById("blogTitle").textContent = `${title} - Life Stories`;
 
 		document.getElementById("blogPost").innerHTML = `
-			${image ? `<img src="${image}" alt="${title}" class="blog-post-image">` : ""}
 			<div class="blog-post-content">
 				<div class="blog-post-date">${date}</div>
 				<h1 class="blog-post-title">${title}</h1>
