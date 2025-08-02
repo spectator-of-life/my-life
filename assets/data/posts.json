@@ -1,44 +1,9 @@
 [
 	{
 		"id": 1,
-		"title": "Building a Reading Habit That Actually Stuck",
-		"excerpt": "After years of buying books I never read, I finally cracked the code to consistent reading...",
+		"title": "Who am I",
+		"excerpt": "Who is the person behind this veil, who am I really",
 		"content": "1.md",
-		"date": "2023-12-20"
-	},
-	{
-		"id": 2,
-		"title": "The Morning Routine That Changed My Life",
-		"excerpt": "After years of chaotic mornings, I discovered a simple routine that transformed my entire outlook.",
-		"content": "2.md",
-		"date": "2024-01-05"
-	},
-    {
-		"id": 3,
-		"title": "The Morning Routine That Changed My Life",
-		"excerpt": "After years of chaotic mornings, I discovered a simple routine that transformed my entire outlook.",
-		"content": "3.md",
-		"date": "2024-01-05"
-	},
-    {
-		"id": 4,
-		"title": "The Morning Routine That Changed My Life",
-		"excerpt": "After years of chaotic mornings, I discovered a simple routine that transformed my entire outlook.",
-		"content": "4.md",
-		"date": "2024-01-05"
-	},
-    {
-		"id": 5,
-		"title": "The Morning Routine That Changed My Life",
-		"excerpt": "After years of chaotic mornings, I discovered a simple routine that transformed my entire outlook.",
-		"content": "5.md",
-		"date": "2024-01-05"
-	},
-    {
-		"id": 6,
-		"title": "The Morning Routine That Changed My Life",
-		"excerpt": "After years of chaotic mornings, I discovered a simple routine that transformed my entire outlook.",
-		"content": "6.md",
-		"date": "2024-01-05"
+		"date": "2025-08-02"
 	}
 ]
