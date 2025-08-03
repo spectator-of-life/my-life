@@ -6,4 +6,11 @@
 		"content": "1.md",
 		"date": "2025-08-02"
 	}
+	{
+		"id": 2,
+		"title": "My past life",
+		"excerpt": "About my past life, things I liked growing up and things I felt",
+		"content": "2.md",
+		"date": "2025-08-03"
+	}
 ]
