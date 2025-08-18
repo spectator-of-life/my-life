@@ -19,5 +19,12 @@
 		"excerpt": "About one of the most beautiful girl I've ever seen",
 		"content": "3.md",
 		"date": "2025-08-05"
+	},
+	{
+		"id": 4,
+		"title": "The ray of hope",
+		"excerpt": "About one strange experience with the girl I like",
+		"content": "4.md",
+		"date": "2025-08-18"
 	}
 ]
