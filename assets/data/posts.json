@@ -61,5 +61,12 @@
 		"excerpt": "My inferences about the girl I like",
 		"content": "9.md",
 		"date": "2025-12-01"
+	},
+	{
+		"id": 10,
+		"title": "Ray of hope 2",
+		"excerpt": "That day where I felt there's hope in this world",
+		"content": "10.md",
+		"date": "2025-12-02"
 	}
 ]
