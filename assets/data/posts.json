@@ -96,5 +96,12 @@
 		"excerpt": "The recent distance I am facing",
 		"content": "14.md",
 		"date": "2025-12-17"
+	},
+	{
+		"id": 15,
+		"title": "The courage",
+		"excerpt": "The day I showed courage to speak in auditorium",
+		"content": "15.md",
+		"date": "2025-12-24"
 	}
 ]
