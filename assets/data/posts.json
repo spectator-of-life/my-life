@@ -117,5 +117,12 @@
 		"excerpt": "My recent experiences and journey until now with the girl I like",
 		"content": "17.md",
 		"date": "2026-01-12"
+	},
+	{
+		"id": 18,
+		"title": "A random thought",
+		"excerpt": "A thought that came to my mind about her while watching April May 99",
+		"content": "18.md",
+		"date": "2026-01-20"
 	}
 ]
