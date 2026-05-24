@@ -152,5 +152,12 @@
 		"excerpt": "Darkness intensifies",
 		"content": "22.md",
 		"date": "2026-04-14"
+	},
+	{
+		"id": 23,
+		"title": "My letter",
+		"excerpt": "Mazhya manaatil vyatha",
+		"content": "23.md",
+		"date": "2026-05-24"
 	}
 ]
